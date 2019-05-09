@@ -1,0 +1,176 @@
+[
+  {
+    "inputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "name": "_hash",
+        "type": "bytes32"
+      },
+      {
+        "indexed": false,
+        "name": "_closedBy",
+        "type": "address"
+      }
+    ],
+    "name": "OnTake",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "name": "_hash",
+        "type": "bytes32"
+      }
+    ],
+    "name": "OnInvalidate",
+    "type": "event"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_orderType",
+        "type": "uint8"
+      },
+      {
+        "name": "_originatorAddress",
+        "type": "address"
+      },
+      {
+        "name": "_collectibleAddress",
+        "type": "address"
+      },
+      {
+        "name": "_collectibleId",
+        "type": "uint256"
+      },
+      {
+        "name": "_tokenAddress",
+        "type": "address"
+      },
+      {
+        "name": "_tokenAmount",
+        "type": "uint256"
+      },
+      {
+        "name": "_feeAddress",
+        "type": "address"
+      },
+      {
+        "name": "_feeAmount",
+        "type": "uint256"
+      },
+      {
+        "name": "_expiration",
+        "type": "uint256"
+      },
+      {
+        "name": "_salt",
+        "type": "uint256"
+      },
+      {
+        "name": "_r",
+        "type": "bytes32"
+      },
+      {
+        "name": "_s",
+        "type": "bytes32"
+      },
+      {
+        "name": "_v",
+        "type": "uint8"
+      }
+    ],
+    "name": "take",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": false,
+    "inputs": [
+      {
+        "name": "_orderType",
+        "type": "uint8"
+      },
+      {
+        "name": "_collectibleAddress",
+        "type": "address"
+      },
+      {
+        "name": "_collectibleId",
+        "type": "uint256"
+      },
+      {
+        "name": "_tokenAddress",
+        "type": "address"
+      },
+      {
+        "name": "_tokenAmount",
+        "type": "uint256"
+      },
+      {
+        "name": "_feeAddress",
+        "type": "address"
+      },
+      {
+        "name": "_feeAmount",
+        "type": "uint256"
+      },
+      {
+        "name": "_expiration",
+        "type": "uint256"
+      },
+      {
+        "name": "_salt",
+        "type": "uint256"
+      },
+      {
+        "name": "_r",
+        "type": "bytes32"
+      },
+      {
+        "name": "_s",
+        "type": "bytes32"
+      },
+      {
+        "name": "_v",
+        "type": "uint8"
+      }
+    ],
+    "name": "invalidate",
+    "outputs": [],
+    "payable": false,
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "constant": true,
+    "inputs": [
+      {
+        "name": "_hash",
+        "type": "bytes32"
+      }
+    ],
+    "name": "isOrderFrozen",
+    "outputs": [
+      {
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "payable": false,
+    "stateMutability": "view",
+    "type": "function"
+  }
+]
